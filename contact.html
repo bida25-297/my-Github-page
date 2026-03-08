@@ -1,48 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>Contact me</tittle>
-    
-    <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/boostrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS--> 
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">My website</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.hml">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="container my-5">
-        <h2>Contact me</h2> 
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:bida25-297@thuto.bac.ac.bw" class="btn btn-success"> bida25-297@thuto.bac.ac.bw</a>.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Tlhalefang</p>
-    </footer>
+<meta charset="UTF-8">
+<title>Contact Us</title>
 
-    <!-- Bootstrap JS and dependencies-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script> 
-</body>    
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="index.html">My Retail Store</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Header -->
+<header class="bg-primary text-white text-center py-5 mb-4">
+<div class="container">
+<h1 class="display-4">Contact Us</h1>
+<p class="lead">Send us a message</p>
+</div>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<form action="acknowledgement.html" method="get">
+
+<div class="mb-3">
+<label for="name" class="form-label">Full Name</label>
+<input type="text" class="form-control" id="name" name="name" required>
+</div>
+
+<div class="mb-3">
+<label for="email" class="form-label">Email Address</label>
+<input type="email" class="form-control" id="email" name="email" required>
+</div>
+
+<div class="mb-3">
+<label for="message" class="form-label">Message</label>
+<textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+</div>
+
+<div class="text-center">
+
+<button type="reset" class="btn btn-danger me-2">Clear</button>
+
+<button type="submit" class="btn btn-success">Submit</button>
+
+</div>
+
+</form>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+<p class="mb-0">&copy; 2026 My Retail Store. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
